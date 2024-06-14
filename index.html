@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de ejemplo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="procesar_formulario.php" method="post">
+        <h2>Formulario de ejemplo</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <span id="error-nombre"></span>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="error-email"></span>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
+        <span id="error-telefono"></span>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <span id="error-mensaje"></span>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
